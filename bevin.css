@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    font-size: 14pt;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    max-width: 450px;
+}
+
+.nav {
+    height: 48px;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    background-color: #8B1A1D;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, .46);
+    position: sticky;
+    left: 0;
+    top: 155px;
+    z-index: 1;
+}
+
+.nav ul {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 5px;
+    list-style: none;
+    align-items: center;
+}
+
+.nav ul li {
+    padding-left: 0;
+    color: rgba(255,255,255,.7);
+    padding: 3.65% 5%;
+}
+
+.nav ul li.selected {
+    font-weight: 700;
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+.top-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 155px;
+    width: 100%;
+    z-index: 1;
+    background-color: #ffffff;
+}
+
+.credits-cast-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tile {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+    margin: 8px 4px 0;
+    overflow: hidden;
+    vertical-align: top;
+    flex-basis: 31%;
+    cursor: pointer;
+}
+
+.tile-top {
+    flex-basis: 28%;
+    margin: 0;
+}
+
+.tile-image-box {
+    padding-bottom: 166%;
+    height: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.tile-image-box-top {
+    padding-bottom: 76%;
+}
+
+.tile-image {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.tile-text-box {
+    height: 62px;
+    min-height: 4.428rem;
+    background-color: #ffffff;
+    padding: 7px 8px;
+}
+
+.tile-text-box-top {
+    height: 40px;
+    min-height: 3.25rem;
+}
+
+.tile-main {
+    color: rgba(0,0,0,.87);
+    -webkit-box-orient: vertical;
+    box-sizing: border-box;
+    display: -webkit-box;
+    font-size: 14px;
+    -webkit-line-clamp: 2;
+    line-height: 20px;
+    max-height: 2.857em;
+    overflow: hidden;
+    padding-bottom: 2px;
+    text-overflow: ellipsis;
+}
+
+.tile-detail {
+    color: rgba(0,0,0,.54);
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
